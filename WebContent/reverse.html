@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML xmlns="http://www.w3.org/1999/xhtml">
+	<HEAD>
+		<TITLE>欢迎来到坦克大战修改密码页面</TITLE>
+		<META content="text/html; charset=utf-8" http-equiv=Content-Type>
+		<LINK rel=stylesheet type=text/css href="css/reverse.css">
+		<META charset="UTF-8">
+		<script>
+		 	
+			function checkUser(){
+				var userName = document.getElementById("userName").value;
+				var userErrorTips = document.getElementById("userError");
+				if(userName ==""){
+					userErrorTips.innerHTML = "姓名不能为空!";
+					userErrorTips.style.color="indianred";
+					return false;
+				}
+				userErrorTips.innerHTML="";
+				var pwd = document.getElementById("pwd").value;
+				var pwdErrorTips = document.getElementById("pwdError");
+				var regCode = /^\w{6,8}$/;
+				if(pwd ==""){
+					pwdErrorTips.innerHTML = "密码不能为空!";
+					pwdErrorTips.style.color="indianred";
+					return false;
+				}
+				if(regCode.test(pwd)==false){
+					pwdErrorTips.innerHTML = "密码不符合标准!";
+					pwdErrorTips.style.color="indianred";
+					return false;
+				}
+				pwdErrorTips.innerHTML="";
+				var rePwd = document.getElementById("repwd").value;
+				var rePwdErrorTips = document.getElementById("repwdError");
+				if(pwd!=rePwd){
+					rePwdErrorTips.innerHTML = "两次输入密码不一致!";
+					rePwdErrorTips.style.color="indianred";
+					return false;
+				}
+				rePwdErrorTips.innerHTML="";
+				
+				alert("恭喜你,修改密码成功！！");
+				document.getElementById("userName").value="";
+				document.getElementById("pwd").value="";
+				document.getElementById("repwd").value = "";
+				document.getElementById("city").selectedIndex=0;
+				document.getElementById("area").value="";
+				return true;
+			}
+			function clearMess(){
+				document.getElementById("userName").value="";
+				document.getElementById("pwd").value="";
+				document.getElementById("repwd").value = "";
+				document.getElementById("city").selectedIndex=0;
+				document.getElementById("area").value="";
+			}
+		</script>
+	</HEAD>
+	<BODY>
+		<FORM id=form1 method=post name=form1 action=#>
+			<DIV id=register>
+			<DIV id=register_left><img src="images/leftImg.jpg"></img></DIV><!--左边-->
+			<DIV id=register_right><!--右边-->
+			
+			<div class=right_top><h1>TankWar</h1></div>
+			<DIV id=yidacms_login_right_foot>
+				
+			<table class="border">
+				<tr>
+					<td colspan="2"><DIV class="span1">玩家名称:</DIV>
+					<DIV class="span2"><INPUT id ="userName" type="text" name="loginname" /></DIV>
+					</td>
+					<td><div id = "userError">请输入正确的姓名</div></td>
+				</tr>
+				<tr>
+					<td colspan="2"><DIV class="span1">玩家密码:</DIV>
+					<DIV class="span2"><INPUT id="pwd" type="password" name="loginpass" /></DIV>
+					</td>
+					<td><div id ="pwdError">请输入6-8位数密码</div></td>
+				</tr>
+				<tr>
+					<td colspan="2"><DIV class="span1">确认密码:</DIV>
+					<DIV class="span2"><INPUT id="repwd" type="password" name="repwd" /></DIV>
+					</td>
+					<td><div id ="repwdError">再次输入密码</div></td>
+				</tr>
+				<tr>
+					<td colspan="2">
+					<DIV ><INPUT class="an1" value="修改" type="button" onclick="checkUser();" >
+					<INPUT class="an2" value="重置" type="button" onclick="clearMess();" ></div>
+					</td>
+					<td><div id="backLogin"><a href="login.html">返回登陆-></a></div></td>
+				</tr>
+				</DIV>
+			</table>
+			</DIV>
+			<DIV class=clear></DIV>
+		</FORM>
+	
+	</BODY>
+</HTML>

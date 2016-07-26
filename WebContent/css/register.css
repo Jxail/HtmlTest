@@ -1,0 +1,164 @@
+* {MARGIN: 0px auto; FONT-SIZE: 16px}
+DIV {LIST-STYLE-TYPE: none; LIST-STYLE-IMAGE: none}
+FORM {
+	LIST-STYLE-TYPE: none; LIST-STYLE-IMAGE: none
+}
+BODY {
+	MARGIN: 0px auto; BACKGROUND: url(../images/register.jpg); FONT-SIZE: 16px
+}
+A IMG {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none
+}
+#register {
+	BORDER-BOTTOM: #cccccc 1px solid; 
+	BORDER-LEFT: #cccccc 1px solid; 
+	MARGIN-TOP: 5%; 
+	WIDTH: 1000px;  
+	HEIGHT: 520px; 
+	BORDER-TOP: #cccccc 1px solid; 
+	BORDER-RIGHT: #cccccc 1px solid
+}
+#register_left img{
+	WIDTH: 460px; FLOAT: left; HEIGHT: 465px
+}
+#register_right {
+	WIDTH: 540px; FLOAT: left; HEIGHT: 520px
+}
+#register_right_foot {
+	MARGIN-TOP: 15px; 
+	WIDTH: 540px; 
+	HEIGHT: 420px;
+	float:left;
+}
+#cityError,#areaError{
+	width:200px;
+	height:30px;
+	margin-top:0.8em;
+	padding-left:0.7em;
+	COLOR: #999999;
+}
+#city,#area{
+	width:200px;
+	height:25px;	
+}
+.span1 {
+	LINE-HEIGHT: 40px; 
+	WIDTH: 80px; 
+	FLOAT: left; 
+	padding-left: 0.5em;
+	HEIGHT: 40px; 
+	COLOR: #999999; 
+	FONT-SIZE: 16px; 
+	FONT-WEIGHT: 500
+}
+#userError,#pwdError{
+	width:200px;
+	height:30px;
+	margin-top:0.8em;
+	padding-left:0.5em;
+	COLOR: #999999;
+}
+#repwdError,#sexTips,#fileTips,#backLogin{
+	width:200px;
+	height:30px;
+	margin-top:0.8em ;
+	padding-left:0.5em;
+	COLOR: #999999;
+}
+#backLogin{
+	position: absolute;
+	width:100px;
+	height:30px;
+	margin-top:2.8em ;
+	margin-left: 20em;
+	padding-left:3em;
+	COLOR: cornflowerblue;
+}
+span{
+	COLOR: #999999;
+}
+
+.span2 {
+	WIDTH: 200px; 
+	FLOAT: left; 
+	HEIGHT: 30px;
+	margin-top: 0.5em;
+	
+}
+.spanradio{
+	margin:0.5em 2em;
+	WIDTH: 120px; 
+	FLOAT: left; 
+	HEIGHT: 40px 
+	COLOR: #999999; 	
+}
+.span2 .file{
+    COLOR: #999999;
+    WIDTH: 200px; 
+    text-align: center;
+    border-color: 1px solid white;
+}
+.right_top h1{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 200;
+  font-size: 3em;
+  margin-bottom: 0.5em;
+  padding-top: 0.5em;
+}
+}
+
+.Border {
+	BORDER-BOTTOM: 0px; 
+	BORDER-LEFT: 0px; 
+	LINE-HEIGHT: 35px; 
+	WIDTH: 540px; 
+	FONT-FAMILY: arial; 
+	HEIGHT: 35px; 
+	COLOR: #999999; 
+	float:left;
+	FONT-SIZE: 20px; 
+	BORDER-TOP: 0px; 
+	FONT-WEIGHT: 600; 
+	BORDER-RIGHT: 0px
+}
+.an1{both
+	BORDER-BOTTOM: 0px;
+	BORDER-LEFT: 0px; 
+	WIDTH: 80px; 
+	BACKGROUND: #ffffff; 
+	FLOAT: left; 
+	HEIGHT: 34px; 
+	COLOR: #000000; 
+	margin:2.3em 4em;
+	padding:0.5em,0.5em;
+	BORDER-TOP: 0px; 
+	BORDER-RIGHT: 0px;
+
+}
+.an2{
+	BORDER-BOTTOM: 0px; 
+	BORDER-LEFT: 0px; 
+	WIDTH: 80px; 
+	BACKGROUND: #ffffff; 
+	FLOAT: left; 
+	HEIGHT: 34px; 
+	margin:2.3em 2em;
+	COLOR: #000000; 
+	padding:0.5em 0em;
+	BORDER-TOP: 0px; 
+	BORDER-RIGHT: 0px
+}
+
+.clear {
+	CLEAR: both;
+}
+a{
+	color: cyan;
+	text-decoration: none;
+}
+a:hover{
+	font-size: 18px;
+	color: indianred;
+}
+

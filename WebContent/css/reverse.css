@@ -1,0 +1,136 @@
+* {MARGIN: 0px auto; FONT-SIZE: 16px}
+DIV {LIST-STYLE-TYPE: none; LIST-STYLE-IMAGE: none}
+FORM {
+	LIST-STYLE-TYPE: none; LIST-STYLE-IMAGE: none
+}
+BODY {
+	MARGIN: 0px auto; BACKGROUND: url(../images/cc.jpg); FONT-SIZE: 16px
+}
+A IMG {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none
+}
+#register {
+	BORDER-BOTTOM: #cccccc 1px solid; 
+	BORDER-LEFT: #cccccc 1px solid; 
+	MARGIN-TOP: 5%; 
+	WIDTH: 1000px;  
+	HEIGHT: 470px; 
+	BORDER-TOP: #cccccc 1px solid; 
+	BORDER-RIGHT: #cccccc 1px solid
+}
+#register_left img{
+	WIDTH: 460px; FLOAT: left; HEIGHT: 470px
+}
+#register_right {
+	WIDTH: 540px; FLOAT: left; HEIGHT: 450px
+}
+#register_right_foot {
+	MARGIN-TOP: 15px; 
+	WIDTH: 540px; 
+	HEIGHT: 288px;
+	float:left;
+}
+.span1 {
+	LINE-HEIGHT: 40px; 
+	WIDTH: 80px; 
+	FLOAT: left; 
+	padding-left: 0.5em;
+	HEIGHT: 40px; 
+	COLOR: #999999; 
+	FONT-SIZE: 16px; 
+	FONT-WEIGHT: 500;
+	margin-top: 1em;
+}
+#userError,#pwdError,#repwdError{
+	width:200px;
+	height:30px;
+	margin-top:1.5em;
+	padding-left:0.8em;
+	COLOR: #999999;
+}
+ 
+
+#backLogin{
+	width:200px;
+	height:30px;
+	margin-top:1em;
+	padding-left:1em;
+	COLOR: cyan;
+}
+
+span{
+	COLOR: #999999;
+}
+
+.span2 {
+	WIDTH: 200px; 
+	FLOAT: left; 
+	HEIGHT: 30px;
+	margin-top: 1.5em;
+	
+}
+
+.right_top h1{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 220;
+  font-size: 3em;
+  margin-bottom: 0.5em;
+  padding-top: 1em;
+}
+}
+
+.Border {
+	BORDER-BOTTOM: 0px; 
+	BORDER-LEFT: 0px; 
+	LINE-HEIGHT: 35px; 
+	WIDTH: 540px; 
+	FONT-FAMILY: arial; 
+	HEIGHT: 35px; 
+	COLOR: #999999; 
+	float:left;
+	FONT-SIZE: 20px; 
+	BORDER-TOP: 0px; 
+	FONT-WEIGHT: 600; 
+	BORDER-RIGHT: 0px
+}
+.an1{both
+	BORDER-BOTTOM: 0px;
+	BORDER-LEFT: 0px; 
+	WIDTH: 80px; 
+	BACKGROUND: #ffffff; 
+	FLOAT: left; 
+	HEIGHT: 32px; 
+	COLOR: #000000; 
+	margin:2.5em 4em;
+	padding:0.5em,0.5em;
+	BORDER-TOP: 0px; 
+	BORDER-RIGHT: 0px;
+
+}
+.an2{
+	BORDER-BOTTOM: 0px; 
+	BORDER-LEFT: 0px; 
+	WIDTH: 80px; 
+	BACKGROUND: #ffffff; 
+	FLOAT: left; 
+	HEIGHT: 32px; 
+	margin:2.5em 0em;
+	COLOR: #000000; 
+	padding:0.5em 0em;
+	BORDER-TOP: 0px; 
+	BORDER-RIGHT: 0px
+}
+
+.clear {
+	CLEAR: both;
+}
+a{
+	COLOR:cyan; 
+	text-decoration: none;
+}
+a:hover{
+	font-size: 18px;
+	color: indianred;
+}
+

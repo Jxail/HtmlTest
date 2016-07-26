@@ -1,0 +1,171 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML xmlns="http://www.w3.org/1999/xhtml">
+	<HEAD>
+		<TITLE>欢迎来到坦克大战注册页面</TITLE>
+		<META content="text/html; charset=utf-8" http-equiv=Content-Type>
+		<LINK rel=stylesheet type=text/css href="css/register.css">
+		<META charset="UTF-8">
+		<script>
+		     var city = new Array();
+		    city["湖北"] = ['武汉','黄冈','恩施'];
+		    city["贵州"] = ['贵阳','遵义','六盘水'];
+		    city["江苏"] = ['杭州','南京','宿迁'];
+		
+		    function initCity(){
+		    	var cities = document.getElementById("city");
+		    	for(var i in city){
+		    		cities.add(new Option(i,i),null);
+		    	}
+		    }
+		    window.onload = initCity;
+		    
+		    function changeCity(){
+		    	var cityValue = document.getElementById("city").value;
+		    	var areaValue = document.getElementById("area");
+		    	areaValue.options.length = 0;
+		    	for(var i in city){
+		    		if(i == cityValue){
+		    			for(var j in city[i]){
+		    				areaValue.add(new Option(city[i][j],city[i][j]),null);
+		    			}
+		    		}
+		    	}
+		    }
+			function checkUser(){
+				var userName = document.getElementById("userName").value;
+				var userErrorTips = document.getElementById("userError");
+				if(userName ==""){
+					userErrorTips.innerHTML = "姓名不能为空!";
+					userErrorTips.style.color="indianred";
+					return false;
+				}
+				userErrorTips.innerHTML="";
+				var pwd = document.getElementById("pwd").value;
+				var pwdErrorTips = document.getElementById("pwdError");
+				var regCode = /^\w{6,8}$/;
+				if(pwd ==""){
+					pwdErrorTips.innerHTML = "密码不能为空!";
+					pwdErrorTips.style.color="indianred";
+					return false;
+				}
+				if(regCode.test(pwd)==false){
+					pwdErrorTips.innerHTML = "密码不符合标准!";
+					pwdErrorTips.style.color="indianred";
+					return false;
+				}
+				pwdErrorTips.innerHTML="";
+				var rePwd = document.getElementById("repwd").value;
+				var rePwdErrorTips = document.getElementById("repwdError");
+				if(pwd!=rePwd){
+					rePwdErrorTips.innerHTML = "两次输入密码不一致!";
+					rePwdErrorTips.style.color="indianred";
+					return false;
+				}
+				rePwdErrorTips.innerHTML="";
+				var cityIndex = document.getElementById("city").selectedIndex;
+				var cityErrorTips = document.getElementById("cityError");
+				if(cityIndex==0){
+					cityErrorTips.innerHTML="请选择具体城市！";
+					cityErrorTips.style.color="indianred";
+					return false;
+				}
+				cityErrorTips.innerHTML="";
+				alert("恭喜你,注册成功！！");
+				document.getElementById("userName").value="";
+				document.getElementById("pwd").value="";
+				document.getElementById("repwd").value = "";
+				document.getElementById("city").selectedIndex=0;
+				document.getElementById("area").value="";
+				return true;
+				return true;
+			}
+			function clearMess(){
+				document.getElementById("userName").value="";
+				document.getElementById("pwd").value="";
+				document.getElementById("repwd").value = "";
+				document.getElementById("city").selectedIndex=0;
+				document.getElementById("area").value="";
+				var sex = document.getElementsByName("Radio");
+				if(!sex[0].checked)
+				sex[0].checked="checked";
+			    }	
+		
+		</script>
+	</HEAD>
+	<BODY>
+		<FORM id=form1 method=post name=form1 action=#>
+			<DIV id=register>
+			<DIV id=register_left><img src="images/leftImg.jpg"></img></DIV><!--左边-->
+			<DIV id=register_right><!--右边-->
+			
+			<div class=right_top><h1>TankWar</h1></div>
+			<DIV id=yidacms_login_right_foot>
+				
+			<table class="border">
+				<tr>
+					<td colspan="2"><DIV class="span1">玩家名称:</DIV>
+					<DIV class="span2"><INPUT id ="userName" type="text" name="loginname" /></DIV>
+					</td>
+					<td><div id = "userError">请输入用户姓名</div></td>
+				</tr>
+				<tr>
+					<td colspan="2"><DIV class="span1">玩家性别:</DIV>
+					    <div class="spanradio">
+					    <input type="radio" name="Radio" value="男" checked /><span>男</span>&nbsp;&nbsp;&nbsp;
+					    <input type="radio" name="Radio" value="女" /><span>女</span></div> 
+					    </td>
+					    <td><div id = "sexTips">请选择您的性别</div></td>
+				</tr>
+				<tr> 
+				<td colspan="2"><DIV class="span1">上传头像:</DIV>
+				    <div class="span2">
+				    <input class="file" type="file" name="img" accept="image/gif,image/png" /></div>
+				</td>
+				<td><div id ="fileTips">请选择gif或png格式的图片文件</div></td>
+				</tr>
+				
+				<tr>
+					<td colspan="2"><DIV class="span1">玩家密码:</DIV>
+					<DIV class="span2"><INPUT id="pwd" type="password" name="loginpass" /></DIV>
+					</td>
+					<td><div id ="pwdError">请输入6-8位数密码</div></td>
+				</tr>
+				<tr>
+					<td colspan="2"><DIV class="span1">确认密码:</DIV>
+					<DIV class="span2"><INPUT id="repwd" type="password" name="repwd" /></DIV>
+					</td>
+					<td><div id ="repwdError">再次输入密码</div></td>
+				</tr>
+				<tr>
+					<td colspan="2"><DIV class="span1">城市选择:</DIV>
+					<DIV class="span2">
+						<select id="city" onchange="changeCity()">
+						<option>--请选择所在城市--</option>
+						</select>
+					</DIV>	
+					</td>
+					<td><div id ="cityError">请选择所在城市</div></td>
+				</tr>
+				<tr>
+					<td colspan="2"><DIV class="span1" >区域选择:</DIV>
+					<DIV class="span2">
+						<select  id="area" >
+						<option>--请选择所在区域--</option>
+						</select>
+					</DIV>
+					</td>
+					<td><div id ="areaError">请选择所在区域</div></td>
+				</tr>
+				
+				</DIV>
+			</table>
+			</DIV>
+			<DIV ><INPUT class="an1" value="注册" type="button" onclick="checkUser();" >
+					<INPUT class="an2" value="重置" type="button" onclick="clearMess();" /></div>
+			         <div id="backLogin"><a href="login.html">返回登陆-></a></div>
+			</div>
+			<DIV class=clear></DIV>
+		</FORM>
+	
+	</BODY>
+</HTML>

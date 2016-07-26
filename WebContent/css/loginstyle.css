@@ -1,0 +1,129 @@
+/*--
+Author: wym
+--*/
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0px;padding:0px;}
+
+table{border-collapse:collapse;border-spacing:0;}
+
+a{text-decoration:none;}
+body{
+	background:url(../images/bg.jpg) no-repeat 0px 0px; 
+ 	font-family: 'Roboto', sans-serif;
+ 	background-size:cover;
+ 	-webkit-background-size:cover;
+	-o-background-size:cover;
+	-moz-background-size:cover;  
+}
+h1 {
+  text-align: center;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 3em;
+  padding-top: 2em;
+}
+h1 span{
+	font-weight:100;
+	margin-left: 10px;
+}
+
+.login-box {
+	
+	background: url(../images/signup_back.png) no-repeat 0px 0px;
+	width: 540px;
+	height: 177px;
+	padding: 3em;
+	margin: 5em auto 0 auto;
+	}
+
+input[type="text"] {
+	font-family: 'Roboto', sans-serif;
+	width: 320px;
+	padding: 0.5em 1em;
+	color: #ffffff;
+	font-size: 1.5em;
+	outline: none;
+	float:left;
+	border: none;
+	font-weight: 100;
+	margin: 0 0 2em 2.5em;
+	background: none;
+}
+#pwdError{
+	color:#ffffff;
+	font-size: 18px;
+	width:180px;
+	margin-top:0em;
+	padding:2.5em 0em;
+	position: absolute;
+}
+#userError{
+	color:#ffffff;
+	font-size: 18px;
+	width:180px;
+	margin-top:0em;
+	margin-left: 0em;
+	padding:0.5em 0em;
+	position: absolute;
+}
+  input[type="password"]{
+    font-family: 'Roboto', sans-serif;
+	width: 320px;
+	padding: 2em 4em;
+	color: #ffffff;
+	font-size: 1.5em;
+	outline: none;
+	float:left;
+	border: none;
+	font-weight: 100;
+	margin: 0 0 2em 2em;
+	background: none;
+	}
+.btn {
+	  text-align: center;
+	  float: right;
+	  margin: 7% 2em;
+	  width: 69%;
+	}
+input[type="button"] {
+	background: none;
+	outline: none;
+	border: none;
+	color: #CBCBCB;
+	font-weight: bold;
+	font-size: 1.5em;
+	cursor: pointer;
+	border: 2px solid rgba(0, 0, 0, 0);
+}
+input[type="button"]:hover {
+  color: #999;
+  border: 2px solid#fff;
+  	transition: 0.8s all;
+	-webkit-transition: 0.8s all;
+	-moz-transition: 0.8s all;
+	-o-transition: 0.8s all;
+}
+.remember {
+  text-align: center;
+  width: 60%;
+  float:left;
+  margin: 0em 5em;
+  padding: 1em 0 0 0em;
+}
+.remember p{
+	float: left;
+	color: #999;
+	width: 450px;
+	font-size: 16px;
+	font-weight: 350px;
+}
+.remember p a {
+	color: #fff;
+	margin-left: 5px;
+}
+.remember p a:hover {
+  color: deepskyblue;
+  font-size: 20px;
+}
